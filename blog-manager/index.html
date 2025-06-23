@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simple Blog Manager</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .hidden { display: none; }
+    .post-item { margin-bottom: 8px; cursor: pointer; }
+    #post-list, #post-detail, form { margin: 20px; }
+    img { border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <h1>Simple Blog Manager</h1>
+
+  <div id="post-list"></div>
+
+  <div id="post-detail">
+    <p>Select a post to view details.</p>
+  </div>
+
+  <form id="new-post-form">
+  <input type="text" id="new-title" placeholder="Title" required />
+  <input type="text" id="new-author" placeholder="Author" required />
+  <input type="text" id="new-image" placeholder="Image URL" />
+  <textarea id="new-content" placeholder="Content" required></textarea>
+  <button type="submit">Add Post</button>
+</form>
+
+
+  <form id="edit-post-form" class="hidden">
+    <h4>Update Post Details</h4>
+    <input type="text" id="edit-title" />
+    <textarea id="edit-content" rows="5"></textarea>
+    <button type="submit">Update Post</button>
+    <button type="button" id="cancel-edit">Cancel</button>
+  </form>
+
+  <script src="./src/index.js"></script>
+</body>
+</html>
