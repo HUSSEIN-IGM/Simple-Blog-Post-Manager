@@ -1,4 +1,6 @@
+
 const baseURL = "http://localhost:3001/posts";
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -130,4 +132,4 @@ function sanitize(str) {
     };
     return map[match];
   });
-}
+}   
